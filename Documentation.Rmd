@@ -1,0 +1,42 @@
+---
+title: "BMI calculator documentation"
+author: "GE"
+date: "5 December 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Explanations
+
+BMI calculator is an application that, given your weight (in lbs or kgs) and your height (in inches or meters) calculates your BMI. Body mass index (BMI) is a general measurement which attempts to quantify
+the amount of tissue mass in a person and show whether they are within a healthy range for their height. 
+
+This measurement is not supposed to replace a visit to the doctor for a regular check of your weight. 
+Possible distorting factors - pregnanancy, puberty/childhood, battling cancer.
+
+Additionally, women and men generally have different healthy ranges
+
+## Ranges
+
+- 15 - 18.5 - underweight
+- 18.5 - 25 - normal
+- 25 - 30 - overwieght
+- 30 - 35 - obese class I - obese
+- 35 - 40 - obese class II - severely obese
+- 40 + - obese class III - very severely obese
+
+## Formula used for calculations
+
+```{r cars, echo = TRUE, eval = TRUE}
+meters <- 1.75
+kgs <- 70
+BMI <- kgs/(meters^2)
+print(BMI)
+```
+
+## How to use
+Put in your height and weight and check the radio button with the correst type of measurement. The BMI is calculated automatically.
+
